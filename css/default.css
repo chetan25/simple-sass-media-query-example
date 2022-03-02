@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+}
+
+body {
+  color: green;
+}
+
+.site-main {
+  padding: 2%;
+}
+.site-header__container {
+  background-color: #67b67c;
+  padding: 1rem;
+  text-align: center;
+}
+
+.site-header__brand,
+.site-nav__link {
+  text-decoration: none;
+  color: #3b433b;
+}
+
+.site-header__brand {
+  font-size: 2.2rem;
+  font-weight: bold;
+}
+
+.site-nav__list {
+  display: flex;
+  margin-top: 1.4rem;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  font-weight: 800;
+  font-size: 1.5rem;
+}
+
+.banner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner--img-container {
+  margin: auto;
+  width: 90%;
+  /* max-width: 400px; */
+  /* border: 1px solid red; */
+}
+
+.image {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner--content {
+  padding: 1rem;
+  font-size: 1.5rem;
+}
+
+.site-main__container {
+  font-size: 1.5rem;
+}
+
+.flex-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  margin: 1rem auto;
+  width: 90%;
+  padding: 1rem 0;
+  border: 1px solid grey;
+  box-shadow: 2px 4px 4px black;
+}
+
+.card__image {
+  width: 100%;
+  /* max-width: 100%; */
+  height: auto;
+}
+
+.card__content {
+  padding: 1rem;
+}
+
+.card__actions {
+  margin-top: 1rem;
+  display: flex;
+  align-items: unset;
+  justify-content: space-around;
+  width: 60%;
+}
+.card__text-content {
+  margin-top: 1rem;
+  /* font-size: 1.6rem; */
+}
+.card__btn {
+  color: green;
+}
+/* common  start */
+.center {
+  text-align: center;
+}
+
+.margin-top-2 {
+  margin-top: 2rem;
+}
+
+.section-title {
+  text-decoration: underline;
+  margin-bottom: 1rem;
+}
+
+/* common  end */
+
+/* // animation */
+
+@-webkit-keyframes loading-spinner {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes loading-spinner {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loading-spinner {
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 5px solid black;
+  border-right-color: grey;
+  border-radius: 50%;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  animation-timing-function: ease;
+  -webkit-animation-name: loading-spinner;
+  animation-name: loading-spinner;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}

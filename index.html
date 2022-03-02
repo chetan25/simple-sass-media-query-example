@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SCSS Demo | Home</title>
+
+    <!-- just css -->
+    <!-- <link rel="stylesheet" href="./css/style.css" /> -->
+
+    <!-- mixin scss -->
+    <!-- <link rel="stylesheet" href="./dist/css/style-mixin.css" /> -->
+
+    <!-- mixin and partials scss -->
+    <link rel="stylesheet" href="./dist/css/style-partials.css" />
+
+    <!-- <link
+      rel="stylesheet"
+      media="screen and (min-width: 140px) and (max-width: 380px)"
+      href="phone.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 381px) and (max-width: 700px)"
+      href="tablet.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (min-width: 700px)"
+      href="desktop.css"
+    /> -->
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="site-header__container">
+        <a href="./" class="site-header__brand">Brand Logo</a>
+        <div class="loading-spinner"></div>
+        <nav class="site-nav">
+          <ul class="site-nav__list">
+            <li class="site-nav__item">
+              <a href="./" class="site-nav__link site-nav__link--active"
+                >Home</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a href="./pages/about.html" class="site-nav__link">About</a>
+            </li>
+            <li class="site-nav__item">
+              <a href="#" class="site-nav__link">Nav Link</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main class="site-main">
+      <section class="banner margin-top-2">
+        <div class="banner--img-container">
+          <img src="./assests/lg-image-3.jpg" class="image" />
+        </div>
+        <div class="banner--content">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+            vulputate nisi nec tempor ullamcorper. Etiam scelerisque lobortis
+            urna nec aliquet.
+          </p>
+        </div>
+      </section>
+      <div class="site-main__container margin-top-2">
+        <h2 class="section-title center">Main Content</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur
+          vulputate nisi nec tempor ullamcorper. Etiam scelerisque lobortis urna
+          nec aliquet.
+        </p>
+
+        <section class="margin-top-2">
+          <h2 class="center section-title">Pizzas</h2>
+          <div class="flex-wrapper">
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="./assests/veggie-pizza.jpg" />
+              </div>
+              <div class="card__content">
+                <h2 class="card__title">Veggie Pizza</h2>
+                <p class="card__text-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur vulputate nisi nec tempor ullamcorper. Etiam
+                  scelerisque lobortis urna nec aliquet.
+                </p>
+                <div class="card__actions">
+                  <a href="#" class="btn card__btn">Customize</a>
+                  <a href="#" class="btn card__btn">Buy</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="./assests/chicken-pizza.jpg" />
+              </div>
+              <div class="card__content">
+                <h2 class="card__title">Chicken Pizza</h2>
+                <p class="card__text-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur vulputate nisi nec tempor ullamcorper. Etiam
+                  scelerisque lobortis urna nec aliquet.
+                </p>
+                <div class="card__actions">
+                  <a href="#" class="btn card__btn">Customize</a>
+                  <a href="#" class="btn card__btn">Buy</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <div class="card__image-wrapper">
+                <img class="card__image" src="./assests/cheese-pizza.jpg" />
+              </div>
+              <div class="card__content">
+                <h2 class="card__title">Cheese Pizza</h2>
+                <p class="card__text-content">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Curabitur vulputate nisi nec tempor ullamcorper. Etiam
+                  scelerisque lobortis urna nec aliquet.
+                </p>
+                <div class="card__actions">
+                  <a href="#" class="btn card__btn">Customize</a>
+                  <a href="#" class="btn card__btn">Buy</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+    </main>
+    <!-- <footer class="site-footer">
+      <div class="site-footer__container">
+        <p>footer content</p>
+      </div>
+    </footer> -->
+  </body>
+</html>

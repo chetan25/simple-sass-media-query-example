@@ -1,0 +1,22 @@
+@mixin keyframes-animation($name) {
+  @-webkit-keyframes #{$name} {
+    @content;
+  }
+  @keyframes #{$name} {
+    @content;
+  }
+}
+
+@mixin prefix-property($name, $value) {
+  -webkit-#{$name}: $value;
+  #{$name}: $value;
+}
+
+// @include keyframes-animation("loading-spinner") {
+//   0% {
+//     @include prefix-property(transform, rotate(0deg));
+//   }
+//   100% {
+//     @include prefix-property(transform, rotate(360deg));
+//   }
+// }

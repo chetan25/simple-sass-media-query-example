@@ -1,0 +1,27 @@
+@use "medium_variables" as mediumScreen;
+@use "breakpoints";
+@use "animation";
+
+* {
+  margin: 0;
+}
+
+@include breakpoints.mediaQuery(medium) {
+  body {
+    color: mediumScreen.$textColor;
+  }
+
+  .banner {
+    flex-direction: column-reverse;
+  }
+
+  .card__image {
+    height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+  }
+
+  .card__image-wrapper {
+    height: 20rem;
+  }
+}

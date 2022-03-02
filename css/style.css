@@ -1,0 +1,9 @@
+/* with mobile first - we have all default rules in phone */
+@import url("default.css") screen;
+
+/* if we decide to separate the phone css */
+/* @import url("phone.css") screen and (min-width: 140px) and (max-width: 380px); */
+
+@import url("desktop.css") screen and (min-width: 700px);
+
+@import url("tablet.css") screen and (min-width: 400px) and (max-width: 700px);

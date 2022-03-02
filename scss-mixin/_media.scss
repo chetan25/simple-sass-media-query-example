@@ -1,0 +1,82 @@
+// With Sass, it is possible to nest a media query directly within the CSS rule:
+.heading__title {
+  font-size: 16px;
+
+  @media only screen and (min-width: 640px) {
+    font-size: 18px;
+  }
+
+  &.heading__title--small {
+    font-size: 14px;
+
+    @media only screen and (min-width: 640px) {
+      font-size: 16px;
+    }
+  }
+}
+
+// mixin
+@mixin respond-medium {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+
+// usage
+h1 {
+  font-size: 26px;
+
+  @include respond-medium {
+    font-size: 24px;
+  }
+}
+
+// multiple
+@mixin respond($breakpoint) {
+  @if ($breakpoint == medium) {
+    @media (max-width: 900px) {
+      @content;
+    }
+  }
+  @if ($breakpoint == small) {
+    @media (max-width: 600px) {
+      @content;
+    }
+  }
+}
+
+// usage
+h1 {
+  font-size: 26px;
+  @include respond(medium) {
+    font-size: 24px;
+  }
+  @include respond(small) {
+    font-size: 20px;
+  }
+}
+
+// better
+@mixin breakpoint($point) {
+  @if $point == xxl {
+    @media screen and (min-width: 1680px) {
+      @content;
+    }
+  } @else if $point == xl {
+    @media screen and (min-width: 1443px) {
+      @content;
+    }
+  } @else if $point == l {
+    @media screen and (min-width: 1023px) {
+      @content;
+    }
+  } @else if $point == m {
+    @media screen and (min-width: 767px) {
+      @content;
+    }
+  } @else if $point == s {
+    @media screen and (min-width: 639px) {
+      @content;
+    }
+  }
+}

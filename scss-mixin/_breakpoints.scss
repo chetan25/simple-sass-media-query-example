@@ -1,0 +1,14 @@
+$desktopBp: 830px;
+$tabletBp: 450px;
+
+@mixin mediaQuery($breakPoint) {
+  @if $breakPoint == large {
+    @media screen and (min-width: $desktopBp) {
+      @content;
+    }
+  } @else if $breakPoint == medium {
+    @media screen and (min-width: $tabletBp) and (max-width: $desktopBp) {
+      @content;
+    }
+  }
+}

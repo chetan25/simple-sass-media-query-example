@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+}
+
+body,
+.card__btn {
+  color: blue;
+}
+
+.banner {
+  flex-direction: column-reverse;
+}
+
+.card__image-wrapper {
+  height: 20rem;
+}
+
+.card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}
